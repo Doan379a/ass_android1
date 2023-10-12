@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button"
+    android:orientation="vertical"
+    tools:context=".Nhan_vien">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0288D1"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:tooltipText="bold"
+        app:title="Nhân viên"
+        app:titleMarginStart="70sp"
+        app:titleTextColor="#7B1FA2" />
+
+    <ImageView
+        android:id="@+id/immui_ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-53sp"
+        android:rotation="89"
+        android:rotationX="21"
+        android:src="@drawable/mui_ten_south" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10sp"
+        android:backgroundTint="#1976D2"
+        android:text="Thêm "
+        android:textStyle="bold"
+        app:cornerRadius="0sp"
+        app:rippleColor="@color/white"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1sp" />
+
+    <ListView
+        android:id="@+id/listnv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#0097A7"
+        android:dividerHeight="2sp" />
+
+</LinearLayout>

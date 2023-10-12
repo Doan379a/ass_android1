@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".dang_ky"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chào mừng ban,"
+                android:textColor="#3F51B5"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:text="Đăng ký tài khoản"
+                android:textColor="#673AB7"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/eddn"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/nen_edittext"
+                android:hint="Nhập usemame"
+                android:padding="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edmk"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/nen_edittext"
+                    android:hint="Nhập passwprd"
+                    android:inputType="textPassword"
+                    android:padding="10sp" />
+
+                <ImageView
+                    android:id="@+id/mat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-40sp"
+                    android:src="@drawable/mat_eye_24" />
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edmk2"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@drawable/nen_edittext"
+                android:hint="Nhập lại passwprd"
+                android:inputType="textPassword"
+                android:padding="10sp" />
+    <ImageView
+        android:id="@+id/mat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="-40sp"
+        android:src="@drawable/mat_eye_24" />
+        </LinearLayout>
+            <Button
+                android:id="@+id/btndangky"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20sp"
+                android:backgroundTint="#5EE463"
+                android:gravity="center"
+                android:text="Đăng ký"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="5dp" />
+
+            <Button
+                android:id="@+id/btnveman2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5sp"
+                android:backgroundTint="#75000000"
+                android:gravity="center"
+                android:text="Trở về"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="5dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

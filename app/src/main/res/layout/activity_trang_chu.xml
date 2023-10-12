@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Trang_chu"
+    android:gravity="center">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10sp"
+        android:text="Quản lý nhân sự"
+        android:textColor="#673AB7"
+        android:textSize="40sp"
+        android:textStyle="bold"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40sp"
+        android:text="fpt software company"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="400sp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnpb"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25sp"
+            android:layout_marginEnd="20sp"
+            android:backgroundTint="#DAE4D4D4"
+            android:drawableTop="@drawable/nha_red"
+            android:text=" Phòng ban"
+            android:textColor="#F44336"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            app:strokeColor="#0097A7"
+            app:strokeWidth="1sp" />
+
+        <Button
+            android:id="@+id/btnnv"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#DAE4D4D4"
+            android:drawableTop="@drawable/nguoi_people"
+            android:drawableTintMode="multiply"
+            android:text="Nhân viên"
+            android:textColor="#F44336"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            app:strokeColor="#0097A7"
+            app:strokeWidth="1sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnthoat"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="#DAE4D4D4"
+        android:drawableTop="@drawable/thoat_output"
+        android:text="Thoát"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:strokeColor="#0097A7"
+        app:strokeWidth="1sp" />
+
+
+</LinearLayout>

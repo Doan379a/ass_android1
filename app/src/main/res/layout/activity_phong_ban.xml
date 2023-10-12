@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen_edittext"
+    android:orientation="vertical"
+    tools:context=".Phong_ban">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:tooltipText="bold"
+
+        app:title="Phòng ban"
+        app:titleMarginStart="70sp"
+        app:titleTextColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/immui_ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-53sp"
+        android:rotation="89"
+        android:rotationX="21"
+        android:src="@drawable/mui_ten_south" />
+
+    <ListView
+        android:id="@+id/listpb"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+     android:divider="#0288D1"
+        android:dividerHeight="2sp"
+        />
+
+</LinearLayout>

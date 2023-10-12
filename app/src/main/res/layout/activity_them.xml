@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="400sp"
+        android:layout_height="320sp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/khungnen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20sp"
+            android:text="Thêm nhân viên"
+            android:textColor="#FBC02D"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/msv"
+            android:layout_width="350sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/nen_edittext"
+            android:hint="Nhập mã nhân viên"
+            android:padding="5sp"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="350sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/nen_edittext"
+            android:hint="NHập tên nhân viên"
+            android:padding="5sp"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/phongban"
+            android:layout_width="350sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/nen_edittext"
+            android:hint="Nhập phòng ban"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#689F38"
+            android:text="Thêm"
+            android:textColor="#512DA8"
+            android:textSize="22dp"
+            app:cornerRadius="0sp" />
+    </LinearLayout>
+</LinearLayout>

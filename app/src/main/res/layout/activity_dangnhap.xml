@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10sp"
+    tools:context=".dang_nhap">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:text="Chào mừng bạn đã chở lại"
+                android:textColor="#3F51B5"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:text="Vui lòng đăng nhập để được tiếp tục"
+                android:textColor="#673AB7"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edinhap"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/nen_edittext"
+                android:hint="Nhập usemame"
+                android:padding="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edipass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:background="@drawable/nen_edittext"
+                    android:hint="Nhập passwprd"
+                    android:inputType="textPassword"
+                    android:padding="10sp" />
+                <ImageView
+                    android:id="@+id/mat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-40sp"
+                    android:src="@drawable/mat_eye_24" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:buttonTint="#FFFFFF"
+
+                android:checked="true"
+                android:text="Ghi nhớ tài khoản"
+                android:textColor="#673AB7"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp">
+
+                <Button
+                    android:id="@+id/btndn"
+                    android:layout_width="170dp"
+                    android:layout_height="45dp"
+                    android:backgroundTint="#4CAF50"
+                    android:gravity="center"
+                    android:text="Đăng Nhập"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="5dp" />
+
+                <Button
+                    android:id="@+id/btndk"
+                    android:layout_width="170dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30sp"
+                    android:backgroundTint="#E9FF5722"
+                    android:gravity="center"
+                    android:text="Đăng ký "
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
